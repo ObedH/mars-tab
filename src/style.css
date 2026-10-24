@@ -1,3 +1,7 @@
 #clock {
-  
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  text-align: center;
+  top: 20%;
 }
