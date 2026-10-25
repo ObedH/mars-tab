@@ -6,3 +6,12 @@
   top: 20%;
   font-family: "Times New Roman", Times, serif;
 }
+
+#searchbar {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  text-align: center;
+  top: 40%;
+  font-family: "Times New Roman", Times, serif;
+}
