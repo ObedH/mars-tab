@@ -32,7 +32,7 @@ fetch(`https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=js
     const wd = latest_sol_data.WD;
     const season = latest_sol_data.Season;
     console.log(`Atmospheric temp:`, at);
-    console.log(`Horizontal wind speed:`, hwe);
+    console.log(`Horizontal wind speed:`, hws);
     console.log(`Atmospheric pressure:`, pre);
     console.log(`Wind direction:`, wd);
     console.log(`Season:`, season);
