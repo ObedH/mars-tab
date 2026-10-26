@@ -25,6 +25,16 @@ fetch(`https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=js
 .then(data => {
     console.log(data);
     const latest_sol_key = data.sol_keys[6];
-    console.log(latest_sol_key);
+    const latest_sol_data = data[latest_sol_key];
+    const at = latest_sol_data.AT;
+    const hws = latest_sol_data.HWS;
+    const pre = latest_sol_data.PRE;
+    const wd = latest_sol_data.WD;
+    const season = latest_sol_data.Season;
+    console.log(`Atmospheric temp: ${at}`)
+    console.log(`Horizontal wind speed: ${hws}`)
+    console.log(`Atmospheric pressure: ${pre}`)
+    console.log(`Wind direction: ${wd}`)
+    console.log(`Season: ${season}`)
     document.getElementById("mars-sol").textContent = `Sol ${latest_sol_key}`;
 });
