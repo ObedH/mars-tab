@@ -18,7 +18,7 @@ const millisecondsTillNextSecond = 1000 - milliseconds % 1000;
 setTimeout(setupTimer, millisecondsTillNextSecond);
 
 
-const NASA_API_KEY = import.meta.env.NASA_API_KEY;
+const NASA_API_KEY = import.meta.env.VITE_NASA_API_KEY;
 
 fetch(`https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=json&ver=1.0`)
 .then(data => {
