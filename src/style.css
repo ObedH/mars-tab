@@ -1,6 +1,17 @@
 body {
   font-family: "Times New Roman", Times, serif;
   background-image: url("/src/assets/mars-panorama.webp");
+  min-height: 100%;
+  background-position-y: top;
+  animation: background-scroll 120s linear infinite;
+}
+@keyframes background-scroll {
+  from {
+    background-position-x: 0px;
+  }
+  to {
+    background-position-x: -6686px;
+  }
 }
 
 
