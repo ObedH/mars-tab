@@ -1,10 +1,28 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.app:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
 #clock {
   position: absolute;
   width: 100%;
   left: 0%;
   text-align: center;
   top: 20%;
-  font-family: "Times New Roman", Times, serif;
 }
 
 #searchbar {
@@ -13,5 +31,11 @@
   left: 0%;
   text-align: center;
   top: 40%;
-  font-family: "Times New Roman", Times, serif;
+}
+
+#mars-app {
+  position: absolute;
+  width: 30%;
+  left: 15px;
+  bottom: 15px;
 }
