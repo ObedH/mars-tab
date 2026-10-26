@@ -26,4 +26,5 @@ fetch(`https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=js
     console.log(data);
     const latest_sol_key = data.sol_keys[6];
     console.log(latest_sol_key);
+    document.getElementById("mars-sol").textContent = `Sol ${latest_sol_key}`;
 });
