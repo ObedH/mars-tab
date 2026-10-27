@@ -1,18 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="src/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rockefeller Tab</title>
   </head>
   <body>
-    <h1 id="clock">5:41 PM</h1>
-    <form id="searchbar" action="https://www.google.com/search" method="GET">
-      <input type="text" placeholder="Search..." name="q" />
-      <button type="submit">Submit</button>
-    </form>
+    <div id="central-container">
+      <h1 id="clock">5:41 PM</h1>
+      <form id="searchbar" action="https://www.google.com/search" method="GET">
+        <input id="searchbar-text" type="search" placeholder="Search..." name="q">
+        <button id="searchbar-submit" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
     <div id="mars-app" class="app">
       <div class="app-header">
         <h3 style="margin: 0;">Mars Weather</h3>

@@ -36,22 +36,58 @@ body {
   margin: 2px;
 }
 
+.fa-search {
+  font-size: 30px;
+  padding: 5px;
+}
 
 
-#clock {
+
+#central-container {
   position: absolute;
-  width: 100%;
-  left: 0%;
-  text-align: center;
-  top: 20%;
+  left: 50%;
+  top: 30%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
 }
 
 #searchbar {
-  position: absolute;
-  width: 100%;
-  left: 0%;
   text-align: center;
-  top: 40%;
+}
+
+#searchbar-text {
+  font-size: 30px;
+  padding: 5px;
+  border: 2px solid #D9D8C7;
+  border-radius: 10px;
+  color: #59574D;
+  background-color: #FFFFFF;
+
+  transition: transform 0.3s ease;
+}
+#searchbar-text:focus {
+  transform: scale(1.05);
+}
+
+#searchbar-submit {
+  font-size: 30px;
+  border: 2px solid #D9D8C7;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #59574D;
+
+  transition: transform 0.3s ease;
+}
+#searchbar-submit:hover {
+  transform: scale(1.1);
+}
+
+#clock {
+  text-align: center;
+  font-size: 80px;
+  color: #59574D;
 }
 
 #mars-app {
