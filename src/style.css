@@ -37,7 +37,7 @@ body {
 }
 
 .app-line {
-  margin: 2px;
+  margin: 5px;
 }
 
 .fa-search {
@@ -98,4 +98,22 @@ body {
   position: absolute;
   left: 15px;
   top: 15px;
+}
+
+#mars-title {
+  margin: 0px;
+  font-size: 35px;
+  color: #59574D;
+}
+
+#mars-sol {
+  margin: 0px;
+  font-size: 20px;
+  color: #59574D;
+}
+
+#mars-content {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #59574D;
 }
