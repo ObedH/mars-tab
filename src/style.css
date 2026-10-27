@@ -3,7 +3,7 @@ body {
   background-image: url("/src/assets/mars-panorama.webp");
   min-height: 100%;
   background-position-y: top;
-  animation: background-scroll 120s linear infinite;
+  animation: background-scroll 240s linear infinite;
 }
 @keyframes background-scroll {
   from {
